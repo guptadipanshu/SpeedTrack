@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+    
+<EditTextPreference
+    android:title="OWNER NUMBER"
+    android:key="name"
+    android:summary="Enter your NUMBER">
+    
+    </EditTextPreference>
+   
+        
+        <EditTextPreference
+    android:title="UniqueKey"
+    android:key="uid"
+    android:summary="Enter your UID">
+    
+    </EditTextPreference>
+    
+  <EditTextPreference
+        android:title="PASSWORD"
+        android:key="pass"
+        android:summary="SET A PASSWORD"
+        />
+</PreferenceScreen>

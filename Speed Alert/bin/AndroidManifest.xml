@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.speed_alert"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="11"
+        android:targetSdkVersion="15" />
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.READ_SMS"/>
+    <uses-permission android:name="android.permission.SEND_SMS"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@android:style/Theme.Holo">
+      <uses-library android:name="com.google.android.maps"/>
+          
+        <activity
+            android:name="com.speed_alert.Music"
+            android:label="@string/app_name"
+             android:screenOrientation="portrait" >
+            <intent-filter>
+             <action android:name="android.intent.action.MAIN" />
+              <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+             </activity>
+          
+              <activity
+            android:name="com.speed_alert.Menu"
+            android:label="@string/app_name" 
+            android:theme="@android:style/Theme.Black"
+             android:screenOrientation="portrait"
+            >
+            <intent-filter>
+             <action android:name="com.speed_alert.Menu" />
+              <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+             </activity>
+             <activity
+            android:name="com.speed_alert.Map"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+             <action android:name="com.speed_alert.Map" />
+              <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+             </activity>
+              <activity
+            android:name="com.speed_alert.Aboutus"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.Dialog"
+             android:screenOrientation="portrait" >           
+            <intent-filter>
+             <action android:name="com.speed_alert.Aboutus" />
+              <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+             </activity>
+              <activity
+            android:name="com.speed_alert.Prefs"
+            android:label="@string/app_name"
+             android:screenOrientation="portrait" >
+            <intent-filter>
+             <action android:name="com.speed_alert.Prefs" />
+              <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+             </activity>
+              
+              <activity
+            android:name="com.speed_alert.Password"
+            android:label="@string/app_name" 
+            android:theme="@android:style/Theme.Black"
+             android:screenOrientation="portrait">
+            <intent-filter>
+             <action android:name="com.speed_alert.Password" />
+              <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+             </activity>
+             
+              <activity
+            android:name=".ReceiveSMS"
+            android:label="XYZ" >
+            
+                        <intent-filter>
+                <action android:name="android.provider.Telephony.SMS_RECEIVED" />
+				
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            
+        </activity>
+              
+    </application>
+
+</manifest>

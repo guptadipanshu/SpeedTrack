@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+    <EditTextPreference
+        android:title="PHONE NUMBER"
+        android:key="name"
+        android:summary="Enter OWNER'S NUMBER "
+        />
+    <EditTextPreference
+        android:title="UNIQUE KEY"
+        android:key="uid"
+        android:summary="Enter 4 DIGIT KEY"
+        />
+    <ListPreference
+        android:title="SPEED LIMIT"
+      
+        android:key="list"
+        android:summary="Select the Speed Limit"
+        android:entries="@array/list"
+        android:entryValues="@array/lValues">
+        
+    </ListPreference>
+    
+        <EditTextPreference
+        android:title="PASSWORD"
+        android:key="pass"
+        android:summary="SET A PASSWORD"
+        />
+    
+   
+        
+</PreferenceScreen>
